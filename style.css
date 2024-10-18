@@ -1,0 +1,102 @@
+*{
+   margin: 0%;
+   padding: 0%;
+}
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    height: 90svh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    font-Family: [Red Hat Display]
+}
+.container{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 450px;
+border: 1px solid black;
+border-radius: 20px;
+background-color:white;
+overflow: hidden;
+}
+.phase{
+    padding: 7%;
+    text-align: center;
+}
+h3{
+    color: Dark blue hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 32px;
+}
+h3.p{
+   font-weight: light; 
+   justify-content: center;
+   text-align: justify;
+  
+}
+.sub-container{
+    background-color: hsl(225, 100%, 98%) ;
+    height: min-content;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+.container-left{
+    display: flex;
+    text-align: left;
+}
+.middle{
+    margin-left: 20px;
+}
+h5{
+   font-weight: bold;
+    margin-bottom: 5px;
+}
+.p{
+    color:  hsl(224, 23%, 55%);
+   font-size:bold ;
+}
+button{
+ width: 95%;
+ padding: 18px;
+ background-color:hsl(245, 75%, 52%) ;
+ border: 1px solid transparent;
+ border-radius: 11px;
+ color: white;
+ font-weight: bold;
+ font-size: 16px;
+ 
+}
+.cancel{
+    text-decoration: none;
+    font-weight: bolder;
+    color: hsl(224, 23%, 55%);
+}
+@media screen and (max-width: 480px) {
+    body{
+        background-image:url(images/pattern-background-mobile.svg) ;
+        font-size: 14px;
+    }
+    .container{
+        width: 87%;
+    }
+    h3{
+        font-size: 23px;
+    }
+    .sub-container{
+        padding: 12px;
+    }
+    .container-left{
+        margin-left: 10px;
+    }
+    button{
+        font-size: 13px;
+    }
+  }
+    
+
